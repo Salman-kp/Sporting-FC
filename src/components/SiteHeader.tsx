@@ -89,11 +89,10 @@ export function SiteHeader() {
                   <a
                     href={item.href}
                     onClick={(e) => handleNavClick(item.id, e)}
-                    className={`relative block rounded-full px-4 py-1.5 text-[0.78rem] lg:text-[0.82rem] font-semibold tracking-wider uppercase transition-all duration-300 ease-out select-none active:scale-95 ${
-                      isActive
+                    className={`relative block rounded-full px-4 py-1.5 text-[0.78rem] lg:text-[0.82rem] font-semibold tracking-wider uppercase transition-all duration-300 ease-out select-none active:scale-95 ${isActive
                         ? "bg-white text-black shadow-[0_2px_14px_rgba(255,255,255,0.4)] scale-[1.02]"
                         : "text-white/75 hover:text-white hover:bg-white/10"
-                    }`}
+                      }`}
                   >
                     {item.label}
                   </a>
@@ -125,19 +124,16 @@ export function SiteHeader() {
           >
             <div className="flex flex-col items-center justify-center gap-1.5 size-4">
               <span
-                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${
-                  mobileMenuOpen ? "translate-y-2 rotate-45" : ""
-                }`}
+                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${mobileMenuOpen ? "translate-y-2 rotate-45" : ""
+                  }`}
               />
               <span
-                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${
-                  mobileMenuOpen ? "opacity-0 translate-x-2" : "opacity-100"
-                }`}
+                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${mobileMenuOpen ? "opacity-0 translate-x-2" : "opacity-100"
+                  }`}
               />
               <span
-                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${
-                  mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""
-                }`}
+                className={`h-0.5 w-4 rounded-full bg-white transition-all duration-300 ${mobileMenuOpen ? "-translate-y-2 -rotate-45" : ""
+                  }`}
               />
             </div>
           </button>
@@ -146,9 +142,8 @@ export function SiteHeader() {
 
       {/* Mobile Menu Dropdown Modal */}
       <div
-        className={`overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${
-          mobileMenuOpen ? "max-h-96 pt-3 px-4" : "max-h-0"
-        }`}
+        className={`overflow-hidden transition-all duration-300 ease-[cubic-bezier(0.16,1,0.3,1)] md:hidden ${mobileMenuOpen ? "max-h-96 pt-3 px-4" : "max-h-0"
+          }`}
       >
         <div className="rounded-2xl border border-white/20 bg-black/70 p-5 backdrop-blur-2xl shadow-2xl flex flex-col gap-2">
           {navLinks.map((item) => {
@@ -158,11 +153,10 @@ export function SiteHeader() {
                 key={item.id}
                 href={item.href}
                 onClick={(e) => handleNavClick(item.id, e)}
-                className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-semibold tracking-wider uppercase transition-all duration-200 ${
-                  isActive
+                className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-semibold tracking-wider uppercase transition-all duration-200 ${isActive
                     ? "bg-white text-black font-bold shadow-md"
                     : "text-white/80 hover:bg-white/10 hover:text-white"
-                }`}
+                  }`}
               >
                 <span>{item.label}</span>
                 <span className="text-xs">{isActive ? "●" : "→"}</span>
