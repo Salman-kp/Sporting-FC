@@ -1,0 +1,38 @@
+[
+  {
+    "id": "donate",
+    "label": "Donate to the club",
+    "description": "Back the club's football nights, arts programmes and community work.",
+    "whatsappNumber": "[WhatsApp number for donations]",
+    "prefilledText": "Hi Sporting FC Pallippadi, I would like to donate to the club."
+  },
+  {
+    "id": "sponsor",
+    "label": "Sponsor the club",
+    "description": "Put your business in front of the village, on the turf and on every page of this site.",
+    "whatsappNumber": "[WhatsApp number for sponsorship]",
+    "prefilledText": "Hi Sporting FC Pallippadi, I would like to sponsor the club. Please share the sponsorship packages."
+  },
+  {
+    "id": "host",
+    "label": "Host an event with us",
+    "description": "A match, a tournament night or a community programme: plan it with the club.",
+    "whatsappNumber": "[WhatsApp number for events]",
+    "prefilledText": "Hi Sporting FC Pallippadi, I would like to host an event with the club."
+  },
+  {
+    "id": "help",
+    "label": "Need help in Mankada Pallipuram",
+    "description": "Tell the club what you need and the committee will see who can help.",
+    "whatsappNumber": "[WhatsApp number for help requests]",
+    "prefilledText": "Hi Sporting FC Pallippadi, I need help in Mankada Pallipuram."
+  },
+  {
+    "id": "report",
+    "label": "Report a case in Mankada Pallipuram",
+    "description": "Report a local issue to the club committee.",
+    "whatsappNumber": "[WhatsApp number for case reports]",
+    "prefilledText": "Hi Sporting FC Pallippadi, I want to report a case in Mankada Pallipuram.",
+    "note": "Reports go privately to the committee and are never published."
+  }
+]

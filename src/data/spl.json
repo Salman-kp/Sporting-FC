@@ -1,0 +1,16 @@
+{
+  "name": "[SPL full name]",
+  "shortName": "SPL",
+  "format": "[Teams, nights and format]",
+  "venue": "[Venue]",
+  "season": {
+    "year": 2026
+  },
+  "editions": [
+    {
+      "year": 2026,
+      "champion": "[Champion]",
+      "runnerUp": "[Runner-up]"
+    }
+  ]
+}

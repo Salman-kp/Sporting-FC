@@ -1,0 +1,127 @@
+@import "tailwindcss";
+
+/* Design tokens. Colours are sampled from the club crest (assets/brand/crest.png);
+   Tailwind's default palette is switched off so only these can be used.
+   Keep src/lib/tokens.ts (styleguide) in sync. */
+@theme {
+  --color-*: initial;
+  --color-white: #ffffff;
+  --color-black: #000000;
+  --color-ink-900: #152d37; /* crest lettering: text and headings */
+  --color-teal-800: #123843; /* crest shield: links, dark bands */
+  --color-teal-600: #1f5f6d; /* link hover, accents */
+  --color-ember-500: #b64236; /* eagle wing tips */
+  --color-crimson-600: #9e3143; /* eagle wings: primary buttons, eyebrows */
+  --color-crimson-700: #84283a; /* primary button hover */
+  --color-plum-700: #483059; /* eagle body and ball */
+  --color-gold-400: #d9a441; /* Captures album and trophy moments, on black only */
+  --color-night-950: #060a13; /* World Cup section: the overlay on its background photo */
+  --color-night-900: #0c1526; /* World Cup section: a lighter night shade */
+
+  --radius-card: 4px;
+  --container-site: 75rem;
+
+  /* Soft shadows tinted with the crest colours. */
+  --shadow-card: 0 12px 32px -14px rgb(21 45 55 / 0.28), 0 2px 6px -2px rgb(21 45 55 / 0.08);
+  --shadow-teal: 0 24px 48px -22px rgb(18 56 67 / 0.55);
+  --shadow-crimson: 0 24px 48px -22px rgb(158 49 67 / 0.55);
+  --shadow-plum: 0 24px 48px -22px rgb(72 48 89 / 0.55);
+
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-sweep: sweep 9s ease-in-out infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+  @keyframes sweep {
+    0%,
+    100% {
+      transform: translateX(-60%) skewX(-12deg);
+      opacity: 0;
+    }
+    50% {
+      transform: translateX(60%) skewX(-12deg);
+      opacity: 1;
+    }
+  }
+}
+
+@theme inline {
+  --font-display: var(--font-bebas), "Arial Narrow", sans-serif;
+  --font-sans: var(--font-inter), system-ui, sans-serif;
+}
+
+@layer base {
+  :root {
+    --focus-ring: var(--color-ink-900);
+  }
+
+  html {
+    /* The menu jumps to home-page sections; reduced motion turns this off below. */
+    scroll-behavior: smooth;
+    color-scheme: light;
+    background-color: var(--color-white);
+    color: var(--color-ink-900);
+    -webkit-tap-highlight-color: transparent;
+  }
+
+  /* White page with washes of the crest colours (shield teal, wing ember, ball
+     plum, wing crimson) from the four corners, sized to the screen so they meet
+     and mix in the middle on phones and desktops alike. Fixed to the viewport,
+     so it costs nothing to scroll. Peak strengths are the most that keeps muted
+     text and crimson labels above 4.5:1 (see the styleguide contrast table). */
+  body {
+    isolation: isolate;
+  }
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    z-index: -1;
+    pointer-events: none;
+    background:
+      radial-gradient(75vmax 60vmax at 0% 0%, rgb(18 56 67 / 0.2), transparent 62%),
+      radial-gradient(70vmax 55vmax at 100% 8%, rgb(182 66 54 / 0.24), transparent 62%),
+      radial-gradient(75vmax 60vmax at 100% 100%, rgb(72 48 89 / 0.2), transparent 62%),
+      radial-gradient(70vmax 55vmax at 0% 92%, rgb(158 49 67 / 0.2), transparent 62%),
+      var(--color-white);
+  }
+
+  :focus-visible {
+    outline: 2px solid var(--focus-ring);
+    outline-offset: 3px;
+  }
+}
+
+/* Dark areas (Captures band, photo viewer, controls over video) flip the focus ring. */
+@utility on-dark {
+  --focus-ring: var(--color-white);
+}
+
+@utility skip-link {
+  position: absolute;
+  left: 1rem;
+  top: -5rem;
+  z-index: 50;
+  padding: 0.75rem 1rem;
+  border-radius: var(--radius-card);
+  background-color: var(--color-ink-900);
+  color: var(--color-white);
+  font-weight: 600;
+  &:focus {
+    top: 1rem;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}

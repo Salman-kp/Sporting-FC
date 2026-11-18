@@ -1,0 +1,85 @@
+[
+  {
+    "slug": "2026-sample",
+    "title": "Sample album",
+    "date": "2026-11-08",
+    "cover": "/gallery/2026-sample/001-sample-hero.jpg",
+    "description": "Stand-in photos for the prototype. Delete this album when the first real album goes in.",
+    "images": [
+      {
+        "src": "/gallery/2026-sample/001-sample-hero.jpg",
+        "alt": "Stand-in for the hero photo: floodlit turf at night"
+      },
+      {
+        "src": "/gallery/2026-sample/002-sample-football.jpg",
+        "alt": "Stand-in for a 7s night photo"
+      },
+      {
+        "src": "/gallery/2026-sample/003-sample-fan-culture.jpg",
+        "alt": "Stand-in for a jersey night photo"
+      },
+      {
+        "src": "/gallery/2026-sample/004-sample-community.jpg",
+        "alt": "Stand-in for a Nabi Dinam photo"
+      },
+      {
+        "src": "/gallery/2026-sample/005-sample-board-brazil.jpg",
+        "alt": "Stand-in for the Brazil World Cup flex board"
+      },
+      {
+        "src": "/gallery/2026-sample/006-sample-board-portugal.jpg",
+        "alt": "Stand-in for the Portugal World Cup flex board"
+      },
+      {
+        "src": "/gallery/2026-sample/007-sample-board-argentina.jpg",
+        "alt": "Stand-in for the Argentina World Cup flex board"
+      },
+      {
+        "src": "/gallery/2026-sample/008-sample-board-france.jpg",
+        "alt": "Stand-in for the France World Cup flex board"
+      },
+      {
+        "src": "/gallery/2026-sample/009-sample-wide.jpg",
+        "alt": "Stand-in photo, wide format"
+      },
+      {
+        "src": "/gallery/2026-sample/010-sample-square.jpg",
+        "alt": "Stand-in photo, square format"
+      },
+      {
+        "src": "/gallery/2026-sample/011-sample-landscape.jpg",
+        "alt": "Stand-in photo, landscape format"
+      },
+      {
+        "src": "/gallery/2026-sample/012-sample-portrait.jpg",
+        "alt": "Stand-in photo, portrait format"
+      }
+    ]
+  },
+  {
+    "slug": "2025-captures",
+    "kind": "captures",
+    "title": "Captures 2025",
+    "date": "2025-12-28",
+    "cover": "/gallery/2025-captures/001-sample-captures.jpg",
+    "description": "[One line about the year from the club]",
+    "images": [
+      {
+        "src": "/gallery/2025-captures/001-sample-captures.jpg",
+        "alt": "Stand-in for a Captures 2025 photo, 1 of 4"
+      },
+      {
+        "src": "/gallery/2025-captures/002-sample-captures.jpg",
+        "alt": "Stand-in for a Captures 2025 photo, 2 of 4"
+      },
+      {
+        "src": "/gallery/2025-captures/003-sample-captures.jpg",
+        "alt": "Stand-in for a Captures 2025 photo, 3 of 4"
+      },
+      {
+        "src": "/gallery/2025-captures/004-sample-captures.jpg",
+        "alt": "Stand-in for a Captures 2025 photo, 4 of 4"
+      }
+    ]
+  }
+]

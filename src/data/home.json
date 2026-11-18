@@ -1,0 +1,119 @@
+{
+  "hero": {
+    "slides": [
+      {
+        "image": "/gallery/football-team/3285872368190853424_58003390997_jpg.jpg",
+        "alt": "The squad with their trophy under the floodlights on the turf"
+      },
+      {
+        "image": "/gallery/2026-world-cup-fans/3918082748053234348.jpg",
+        "alt": "Fans in Argentina, Brazil and Portugal jerseys together on the floodlit turf"
+      },
+      {
+        "image": "/gallery/casual-team-images/UD_sportingfc_ppd_3757060504419300053_58003390997_11_9_2026.jpg",
+        "alt": "Members lined up by their cars under coconut palms"
+      },
+      {
+        "image": "/gallery/2026-world-cup-fans/3913332761167652758.jpg",
+        "alt": "Brazil World Cup flex board in Pallippadi under the coconut palms"
+      },
+      {
+        "image": "/gallery/football-team/3311195262970192604_58003390997_jpg.jpg",
+        "alt": "Three players with a trophy on the turf at night"
+      },
+      {
+        "image": "/gallery/casual-team-images/3643786733528406174_58003390997_jpg.jpg",
+        "alt": "Friends in raincoats on a rainy outing"
+      }
+    ],
+    "seconds": 6
+  },
+  "moments": {
+    "title": "Off the pitch",
+    "folder": "casual-team-images",
+    "captions": {
+      "3635744030307793505_58003390997_jpg.jpg": "The squad with a winner’s memento outside his home",
+      "3635744030307885039_58003390997_jpg.jpg": "Members with a memento among the trees",
+      "3635744030316276890_58003390997_jpg.jpg": "Members presenting a memento to a young winner",
+      "3635744030324578335_58003390997_jpg.jpg": "Members with a memento in a garden",
+      "3635744030433695811_58003390997_jpg.jpg": "Handing over a memento at night",
+      "3635744030442097952_58003390997_jpg.jpg": "The squad outside a winner’s home",
+      "3635744030450278190_58003390997_jpg.jpg": "A big group of members outside a winner’s home",
+      "3635744030450408278_58003390997_jpg.jpg": "Collage congratulating all the winners",
+      "3635744030450505139_58003390997_jpg.jpg": "Members presenting a memento in a courtyard",
+      "3635744030483946068_58003390997_jpg.jpg": "Members with a young winner and his memento",
+      "3635744030500799659_58003390997_jpg.jpg": "The squad outside a house with a red-tiled roof",
+      "3643786733528406174_58003390997_jpg.jpg": "Friends in raincoats on a rainy outing",
+      "3797504578922119667_59175210364_jpg.jpg": "Friends laughing together, in black and white",
+      "3797504579056368995_59175210364_jpg.jpg": "Friends sitting together on the grass",
+      "3807458362645236292_58003390997_jpg.jpg": "A member on a hillside walk",
+      "3807458362762683298_58003390997_jpg.jpg": "The squad in football shirts on a ground",
+      "UD_shamil_nk__3658493243203020150_4069150294_11_9_2026.jpg": "Members on a wedding stage",
+      "UD_sportingfc_ppd_3673651965150946274_58003390997_11_9_2026.jpg": "The squad on the turf at night",
+      "UD_sportingfc_ppd_3674419611745084355_58003390997_11_9_2026.jpg": "Members with their bikes",
+      "UD_sportingfc_ppd_3677798960295983638_58003390997_11_9_2026.jpg": "Players relaxing on the turf",
+      "UD_sportingfc_ppd_3718653050048441271_58003390997_11_9_2026.jpg": "Members in front of a shop shutter at night",
+      "UD_sportingfc_ppd_3725221288672724179_58003390997_11_9_2026.jpg": "Friends by a car at night",
+      "UD_sportingfc_ppd_3757060504419300053_58003390997_11_9_2026.jpg": "Members lined up by their cars under coconut palms",
+      "UD_sportingfc_ppd_3757092537518475745_58003390997_11_9_2026.jpg": "Friends on a bench, in black and white",
+      "UD_sportingfc_ppd_3808330938997350545_58003390997_11_9_2026.jpg": "The squad lined up on an open ground",
+      "UD_sportingfc_ppd_3808565021752891030_58003390997_11_9_2026.jpg": "Members with their bikes in a field",
+      "UD_sportingfc_ppd_3918082748053234348_58003390997_11_9_2026.jpg": "Fans in Argentina, Brazil and Portugal jerseys on the floodlit turf",
+      "UD_sportingfc_ppd_4002756392875846276_58003390997_11_9_2026.jpg": "Members with the groom on a wedding stage",
+      "UD_stories_of_plprm_3649463733505818922_55414586547_11_9_2026.jpg": "A big group of members by a car shed",
+      "UD_stories_of_plprm_3651232449558098841_55414586547_11_9_2026.jpg": "Members in mundu outside a house"
+    }
+  },
+  "squads": {
+    "title": "Tournament squads",
+    "folder": "football-team",
+    "initial": 12,
+    "captions": {
+      "3285872368065156332_58003390997_jpg.jpg": "Squad photo in the shade of the trees",
+      "3285872368190853424_58003390997_jpg.jpg": "Squad with their trophy at night",
+      "3304825458402271842_58003390997_jpg.jpg": "Squad with their trophy on a red-earth ground",
+      "3304825458410783397_58003390997_jpg.jpg": "A player receiving an award",
+      "3304825458410817159_58003390997_jpg.jpg": "Squad and supporters with their trophies",
+      "3304825458419163288_58003390997_jpg.jpg": "Squad and supporters with a trophy in front of the goal",
+      "3311195262970192604_58003390997_jpg.jpg": "Three players with a trophy on the turf at night",
+      "3311195263095830782_58003390997_jpg.jpg": "Squad with their trophy under the floodlights",
+      "3817978595143264726_58003390997_jpg.jpg": "Squad in purple kit behind the tournament banner",
+      "3817978595151663944_58003390997_jpg.jpg": "Supporters in the stand",
+      "3817978595151702167_58003390997_jpg.jpg": "A match under the floodlights",
+      "3817978595160051395_58003390997_jpg.jpg": "Supporters celebrating at the ground",
+      "3817978595160067262_58003390997_jpg.jpg": "Crowd along the touchline at a tournament",
+      "3817978595269147963_58003390997_jpg.jpg": "A night match on a red-earth ground",
+      "3817978595277532255_58003390997_jpg.jpg": "A player getting treatment on the pitch",
+      "3817978595285875164_58003390997_jpg.jpg": "Supporters watching the match",
+      "3817978595327858884_58003390997_jpg.jpg": "Supporters following the game",
+      "UD_sportingfc_ppd_3058349859741306818_58003390997_11_9_2026.jpg": "Squad on a red-earth ground under palm trees",
+      "UD_sportingfc_ppd_3290144997974312966_58003390997_11_9_2026.jpg": "Squad behind a tournament banner",
+      "UD_sportingfc_ppd_3290170786073675132_58003390997_11_9_2026.jpg": "Young squad in the shade before a match",
+      "UD_sportingfc_ppd_3366271251341103525_58003390997_11_9_2026.jpg": "Squad lined up on a red-earth ground",
+      "UD_sportingfc_ppd_3817951098309686236_58003390997_11_9_2026.jpg": "Squad in purple kit with the tournament banner",
+      "UD_stories_of_plprm_3366935158585833276_55414586547_11_9_2026.jpg": "Squad with their trophy in front of the goal",
+      "IMG_20211017_171806.jpg": "Players in green bibs gathered on the ground before a match",
+      "IMG_20211017_172543.jpg": "Squad in green bibs on a red-earth ground",
+      "IMG_20211017_184122.jpg": "Two players with their medals and the trophy at night",
+      "IMG_20211017_184139.jpg": "Squad with their medals and the trophy at night",
+      "IMG_20211017_191244.jpg": "The squad celebrating together at a cafe after the tournament",
+      "IMG_20211017_191246.jpg": "The squad celebrating together at a cafe after the tournament"
+    }
+  },
+  "fanZone": {
+    "eyebrow": "Fan culture",
+    "title": "World Cup fan show",
+    "lead": "Giant boards for Brazil, Portugal, Argentina and France, built by the club and signed Pallippadi, the fireworks on the night and the Fan’s War on the turf.",
+    "background": "/gallery/2026-world-cup-bg/world-cup-2026-poster.jpg",
+    "folder": "2026-world-cup-fans",
+    "captions": {
+      "3911470636455177129.mp4": "The Argentina fans’ flex board",
+      "3913325637989467554.jpg": "Portugal World Cup flex board in Pallippadi: Força Portugal, One Last Dance",
+      "3913332761167652758.jpg": "Brazil World Cup flex board in Pallippadi under the coconut palms",
+      "3914361560814496777.mp4": "The French fans’ flex board in Pallippadi",
+      "3915057128268151259.mp4": "Fireworks at the Portugal flex board",
+      "3918082748053234348.jpg": "Fans in Argentina, Brazil and Portugal jerseys together on the floodlit turf",
+      "3919448379386193289.mp4": "A Sporting FC Fan’s War match on the floodlit turf"
+    }
+  }
+}

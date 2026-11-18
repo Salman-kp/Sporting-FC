@@ -1,0 +1,31 @@
+{
+  "name": "Sporting FC Pallippadi",
+  "alternateName": "SFC Pallippadi",
+  "identityLine": "Arts & Sports Club · Mankada Pallipuram, Malappuram",
+  "tagline": "[English tagline from the club]",
+  "founded": 2024,
+  "siteUrl": "https://sportingfc.droxdev.com",
+  "instagram": "https://www.instagram.com/sportingfc.ppd",
+  "email": "[club email]",
+  "whatsapp": "[club WhatsApp number]",
+  "address": {
+    "street": "Mankada Pallipuram",
+    "locality": "Mankada",
+    "district": "Malappuram",
+    "region": "Kerala",
+    "postalCode": "[PIN]",
+    "country": "IN"
+  },
+  "areaServed": ["Mankada", "Pallipuram", "Anakkayam", "Koottilangadi", "Padinhattummuri", "Manjeri"],
+  "grounds": {
+    "roots": {
+      "name": "Marikkals FC Football Ground",
+      "mapsUrl": "https://maps.app.goo.gl/m3MuWncLSmCYmujx8",
+      "lat": 11.0609,
+      "lng": 76.1217
+    },
+    "home": {
+      "name": "[New ground name]"
+    }
+  }
+}

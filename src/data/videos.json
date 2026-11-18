@@ -1,0 +1,12 @@
+[
+  {
+    "slug": "sample-reel",
+    "title": "[Reel title]",
+    "description": "[One line describing what happens in the reel]",
+    "date": "2026-06-14",
+    "src": "/videos/sample-reel.mp4",
+    "poster": "/videos/sample-reel.poster.webp",
+    "instagramUrl": "https://www.instagram.com/sportingfc.ppd/reels/",
+    "duration": 15
+  }
+]

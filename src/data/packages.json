@@ -1,0 +1,8 @@
+[
+  {
+    "name": "[Package name]",
+    "price": null,
+    "period": "per season",
+    "includes": ["[What the package includes]"]
+  }
+]
