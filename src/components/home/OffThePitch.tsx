@@ -1,5 +1,7 @@
 import { AlbumViewer } from "@/components/AlbumViewer";
 import { Picture } from "@/components/Picture";
+import { RevealOnScroll } from "@/components/ui/RevealOnScroll";
+import { TiltCard3D } from "@/components/ui/TiltCard3D";
 import { home } from "@/lib/data";
 import { slideFor } from "@/lib/images";
 import { folderPhotos, type FolderPhoto } from "@/lib/media";
@@ -30,21 +32,23 @@ function CompactPhotoCard({
   cfg: (typeof COMPACT_EDITORIAL)[0];
 }) {
   return (
-    <div className={`relative ${cfg.offset} transition-transform duration-300`}>
-      <a
-        href={photo.src}
-        data-index={index}
-        className="group relative block w-full overflow-hidden rounded-card bg-stone-200/90 shadow-card ring-1 ring-black/5 transition-all duration-300 hover:z-20 hover:-translate-y-1 hover:shadow-lg"
-      >
-        <div className={`${cfg.aspect} w-full overflow-hidden`}>
-          <Picture
-            src={photo.src}
-            alt={photo.alt}
-            sizes="(min-width: 1280px) 230px, (min-width: 1024px) 20vw, (min-width: 640px) 30vw, 50vw"
-            className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
-          />
-        </div>
-      </a>
+    <div className={`relative ${cfg.offset}`}>
+      <TiltCard3D maxTilt={10} scale={1.03} glareOpacity={0.35}>
+        <a
+          href={photo.src}
+          data-index={index}
+          className="group relative block w-full overflow-hidden rounded-card bg-stone-200/90 shadow-card ring-1 ring-black/5 transition-all duration-300 hover:z-20 hover:shadow-xl"
+        >
+          <div className={`${cfg.aspect} w-full overflow-hidden`}>
+            <Picture
+              src={photo.src}
+              alt={photo.alt}
+              sizes="(min-width: 1280px) 230px, (min-width: 1024px) 20vw, (min-width: 640px) 30vw, 50vw"
+              className="size-full object-cover transition-transform duration-500 ease-out group-hover:scale-105"
+            />
+          </div>
+        </a>
+      </TiltCard3D>
     </div>
   );
 }
@@ -68,41 +72,45 @@ export function OffThePitch() {
     >
       <div className="mx-auto max-w-7xl px-4 sm:px-8">
         {/* Intro Row */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-14 sm:mb-20">
-          <div className="lg:col-span-3 text-xs font-semibold tracking-widest text-[#5a7837] uppercase">
-            01 / COMMUNITY
-          </div>
+        <RevealOnScroll direction="up">
+          <div className="grid grid-cols-1 lg:grid-cols-12 gap-8 items-start mb-14 sm:mb-20">
+            <div className="lg:col-span-3 text-xs font-semibold tracking-widest text-[#5a7837] uppercase">
+              01 / COMMUNITY
+            </div>
 
-          <div className="lg:col-span-6">
-            <h2
-              id="moments-title"
-              className="font-display text-7xl sm:text-8xl md:text-9xl leading-[0.88] tracking-tight uppercase"
-            >
-              <span className="block text-[#1c1c1c]">OFF THE</span>
-              <span className="block text-[#5a7837]">PITCH.</span>
-            </h2>
-          </div>
+            <div className="lg:col-span-6">
+              <h2
+                id="moments-title"
+                className="font-display text-7xl sm:text-8xl md:text-9xl leading-[0.88] tracking-tight uppercase"
+              >
+                <span className="block text-[#1c1c1c]">OFF THE</span>
+                <span className="block text-[#5a7837]">PITCH.</span>
+              </h2>
+            </div>
 
-          <div className="lg:col-span-3 lg:pt-4 text-xs sm:text-sm leading-relaxed text-[#555] font-normal">
-            More than a game. A club that shows up for its people, celebrates every win and keeps the whole community moving.
+            <div className="lg:col-span-3 lg:pt-4 text-xs sm:text-sm leading-relaxed text-[#555] font-normal">
+              More than a game. A club that shows up for its people, celebrates every win and keeps the whole community moving.
+            </div>
           </div>
-        </div>
+        </RevealOnScroll>
 
         {/* Compact, Scattered Editorial Grid (All 10 images fit compactly in view) */}
         <AlbumViewer slides={slides} title={title} albumParam="offthepitch_photo">
-          <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-5 items-center">
-            {initialPhotos.map((photo, i) => {
-              const cfg = COMPACT_EDITORIAL[i % COMPACT_EDITORIAL.length];
-              return (
-                <CompactPhotoCard
-                  key={photo.file}
-                  photo={photo}
-                  index={i}
-                  cfg={cfg}
-                />
-              );
-            })}
-          </div>
+          <RevealOnScroll direction="up" delayMs={150}>
+            <div className="grid grid-cols-2 gap-3 sm:grid-cols-3 sm:gap-4 md:grid-cols-5 items-center">
+              {initialPhotos.map((photo, i) => {
+                const cfg = COMPACT_EDITORIAL[i % COMPACT_EDITORIAL.length];
+                return (
+                  <CompactPhotoCard
+                    key={photo.file}
+                    photo={photo}
+                    index={i}
+                    cfg={cfg}
+                  />
+                );
+              })}
+            </div>
+          </RevealOnScroll>
 
           {/* Show More Section (same compact, staggered styling) */}
           {remainingPhotos.length > 0 && (

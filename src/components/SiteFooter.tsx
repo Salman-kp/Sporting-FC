@@ -100,13 +100,6 @@ export function SiteFooter() {
           </div>
         </div>
 
-        {/* Sponsor line if any */}
-        {sponsorNames.length > 0 && (
-          <p className="mt-14 border-t border-ink-900/10 pt-6 text-xs text-[#666]">
-            With thanks to our sponsors: {sponsorNames.join(" · ")}
-          </p>
-        )}
-
         {/* Bottom Bar: Location Credits, Copyright & Developer attribution */}
         <div className="mt-8 flex flex-col gap-3 border-t border-ink-900/10 pt-6 text-[0.7rem] sm:text-xs text-[#777] uppercase tracking-wider sm:flex-row sm:items-center sm:justify-between">
           <p>
@@ -116,15 +109,6 @@ export function SiteFooter() {
             <p>
               © SPORTING FC PALLIPPADI {buildDate.slice(0, 4)}
             </p>
-            <span>·</span>
-            <a
-              href="https://droxdev.com"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="normal-case transition-colors hover:text-[#1c1c1c]"
-            >
-              Built by Drox.dev
-            </a>
           </div>
         </div>
       </div>

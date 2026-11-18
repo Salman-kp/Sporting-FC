@@ -29,6 +29,7 @@
 
   --animate-marquee: marquee 40s linear infinite;
   --animate-sweep: sweep 9s ease-in-out infinite;
+  --animate-float-subtle: float-subtle 6s ease-in-out infinite;
 
   @keyframes marquee {
     to {
@@ -44,6 +45,23 @@
     50% {
       transform: translateX(60%) skewX(-12deg);
       opacity: 1;
+    }
+  }
+  @keyframes float-subtle {
+    0%,
+    100% {
+      transform: translateY(0px);
+    }
+    50% {
+      transform: translateY(-6px);
+    }
+  }
+  @keyframes heroProgress {
+    from {
+      width: 0%;
+    }
+    to {
+      width: 100%;
     }
   }
 }
