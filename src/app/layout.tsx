@@ -91,7 +91,10 @@ export const metadata: Metadata = {
     },
   },
   verification: {
-    google: "google9c9cdbdc6ed6c5a8",
+    google: [
+      "LbHVKb2TdCbn7ZRBsAFknu54ZFQIDVyTO7QYYM6M83k",
+      "google9c9cdbdc6ed6c5a8",
+    ],
   },
 };
 
