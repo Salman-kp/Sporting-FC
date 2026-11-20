@@ -1,7 +1,34 @@
 import type { MetadataRoute } from "next";
-import { club } from "@/lib/data";
+import { albums, club } from "@/lib/data";
 
-// Grows with each route in the Build phase (album images and reels included).
 export default function sitemap(): MetadataRoute.Sitemap {
-  return [{ url: club.siteUrl, changeFrequency: "monthly", priority: 1 }];
+  const baseUrl = club.siteUrl.replace(/\/$/, "");
+
+  // Root Homepage
+  const routes: MetadataRoute.Sitemap = [
+    {
+      url: `${baseUrl}/`,
+      lastModified: new Date(),
+      changeFrequency: "daily",
+      priority: 1.0,
+    },
+    {
+      url: `${baseUrl}/styleguide`,
+      lastModified: new Date(),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
+  ];
+
+  // Dynamic Album Galleries
+  for (const album of albums) {
+    routes.push({
+      url: `${baseUrl}/gallery/${album.slug}`,
+      lastModified: new Date(album.date),
+      changeFrequency: "weekly",
+      priority: 0.8,
+    });
+  }
+
+  return routes;
 }

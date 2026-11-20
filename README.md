@@ -1,6 +1,6 @@
 # Sporting FC Pallippadi
 
-The website of Sporting FC Pallippadi, an arts and sports club in Mankada Pallipuram, Malappuram. Static and mobile-first: Next.js 16, Tailwind CSS 4, hosted on Vercel at
+The website of Sporting FC Pallippadi, an arts and sports club in Mankada Pallipuram, Malappuram. Static and mobile-first: Next.js 16, Tailwind CSS 4, hosted on Vercel at https://sporting-fc-pallippadi.vercel.app
 
 There is no backend, database or CMS. Every piece of content is a file in this repo, so updating the site means editing a file and committing it.
 

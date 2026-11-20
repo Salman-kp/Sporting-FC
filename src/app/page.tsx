@@ -8,6 +8,9 @@ import { TournamentSquads } from "@/components/home/TournamentSquads";
 import { club } from "@/lib/data";
 
 export const metadata: Metadata = {
+  title: `${club.name} | Arts & Sports Club, Mankada Pallipuram, Malappuram`,
+  description:
+    "Welcome to Sporting FC Pallippadi. Explore our 7s football tournament squads, community moments off the pitch, World Cup fan zone, and club sponsors in Malappuram.",
   alternates: { canonical: "/" },
 };
 
