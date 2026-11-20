@@ -90,8 +90,8 @@ export function SiteHeader() {
                     href={item.href}
                     onClick={(e) => handleNavClick(item.id, e)}
                     className={`relative block rounded-full px-4 py-1.5 text-[0.78rem] lg:text-[0.82rem] font-semibold tracking-wider uppercase transition-all duration-300 ease-out select-none active:scale-95 ${isActive
-                        ? "bg-white text-black shadow-[0_2px_14px_rgba(255,255,255,0.4)] scale-[1.02]"
-                        : "text-white/75 hover:text-white hover:bg-white/10"
+                      ? "bg-white text-black shadow-[0_2px_14px_rgba(255,255,255,0.4)] scale-[1.02]"
+                      : "text-white/75 hover:text-white hover:bg-white/10"
                       }`}
                   >
                     {item.label}
@@ -154,8 +154,8 @@ export function SiteHeader() {
                 href={item.href}
                 onClick={(e) => handleNavClick(item.id, e)}
                 className={`flex items-center justify-between rounded-xl px-4 py-2.5 text-xs font-semibold tracking-wider uppercase transition-all duration-200 ${isActive
-                    ? "bg-white text-black font-bold shadow-md"
-                    : "text-white/80 hover:bg-white/10 hover:text-white"
+                  ? "bg-white text-black font-bold shadow-md"
+                  : "text-white/80 hover:bg-white/10 hover:text-white"
                   }`}
               >
                 <span>{item.label}</span>

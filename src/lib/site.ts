@@ -28,7 +28,8 @@ export const addressLine = [club.address.street, club.address.district, club.add
 
 export const mapsLink =
   club.grounds.home.mapsUrl ??
-  `https://www.google.com/maps/search/?api=1&query=${encodeURIComponent(`${club.address.street}, ${club.address.district}, Kerala`)}`;
+  club.grounds.roots.mapsUrl ??
+  "https://maps.app.goo.gl/iZfk1STQDpPVN6uaA";
 
 // For files the club supplies later (crest, sponsor logos): render a fallback until they exist.
 export const publicFileExists = (file: string) => existsSync(path.join(process.cwd(), "public", file));

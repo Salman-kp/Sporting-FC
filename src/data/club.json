@@ -20,12 +20,13 @@
   "grounds": {
     "roots": {
       "name": "Marikkals FC Football Ground",
-      "mapsUrl": "https://maps.app.goo.gl/m3MuWncLSmCYmujx8",
+      "mapsUrl": "https://maps.app.goo.gl/iZfk1STQDpPVN6uaA",
       "lat": 11.0609,
       "lng": 76.1217
     },
     "home": {
-      "name": "[New ground name]"
+      "name": "Marikkals Ground & Pallippadi Turf",
+      "mapsUrl": "https://maps.app.goo.gl/iZfk1STQDpPVN6uaA"
     }
   }
 }

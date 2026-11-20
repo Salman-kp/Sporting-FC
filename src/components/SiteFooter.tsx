@@ -1,8 +1,8 @@
 import Link from "next/link";
 import { Crest } from "@/components/Crest";
 import { InstagramIcon, MapPinIcon, MessageIcon } from "@/components/icons";
-import { ButtonLink } from "@/components/ui/Button";
-import { club, sponsors } from "@/lib/data";
+import { BackToTop } from "@/components/ui/BackToTop";
+import { club } from "@/lib/data";
 import { addressLine, buildDate, clubWhatsapp, mapsLink } from "@/lib/site";
 
 const footerNavLinks = [
@@ -14,46 +14,42 @@ const footerNavLinks = [
 ];
 
 export function SiteFooter() {
-  const sponsorNames = sponsors.filter((s) => s.active).map((s) => s.name);
   const whatsapp = clubWhatsapp(`Hi ${club.name}, `);
 
   return (
-    <footer className="border-t border-ink-900/10 bg-[#f9f9f7] text-[#1c1c1c]">
-      <div className="mx-auto max-w-7xl px-4 py-16 sm:px-8 sm:py-24">
-        {/* Main Grid: "KEEP PLAYING." on the left, navigation & contact on the right */}
-        <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-start">
-          {/* Left Column: Big Statement Headline */}
-          <div className="lg:col-span-6 xl:col-span-7">
-            <h2 className="font-display text-7xl sm:text-8xl md:text-9xl leading-[0.88] tracking-tight uppercase select-none">
-              <span className="block text-[#1c1c1c]">KEEP</span>
-              <span className="block text-[#5a7837]">PLAYING.</span>
-            </h2>
-
-            {/* Club Identity Details Preserved */}
-            <div className="mt-8 flex items-center gap-4">
-              <Crest sizes="48px" decorative className="size-12 shrink-0 drop-shadow-sm" />
+    <footer className="border-t border-black/10 bg-[#f9f9f7] text-[#1c1c1c]">
+      <div className="mx-auto max-w-7xl px-4 py-10 sm:px-8 sm:py-14">
+        {/* Main Grid: Clean 3-Column Balanced Layout */}
+        <div className="grid grid-cols-1 md:grid-cols-12 gap-8 items-start pb-8 border-b border-black/8">
+          {/* Col 1: Brand & Club Identity */}
+          <div className="md:col-span-5 flex flex-col gap-3">
+            <Link href="/" className="group inline-flex items-center gap-3 w-fit select-none">
+              <Crest sizes="40px" decorative className="size-10 shrink-0 drop-shadow-sm transition-transform duration-300 group-hover:scale-105" />
               <div>
-                <p className="font-display text-xl tracking-wider uppercase text-[#1c1c1c]">
+                <p className="font-display text-xl tracking-wider uppercase text-[#1c1c1c] transition-colors group-hover:text-[#5a7837]">
                   {club.name}
                 </p>
                 <p className="text-xs text-[#666] tracking-wide">
                   {club.identityLine}
                 </p>
               </div>
-            </div>
+            </Link>
+            <p className="text-xs text-[#666] leading-relaxed max-w-sm pt-1">
+              Arts & sports club in Mankada Pallipuram, Malappuram. Dedicated to sevens football, community brotherhood, and youth sports.
+            </p>
           </div>
 
-          {/* Center Column: Section Navigation Links */}
-          <div className="lg:col-span-3 xl:col-span-2">
-            <h3 className="text-xs font-semibold tracking-widest text-[#5a7837] uppercase mb-4">
-              MENU
-            </h3>
-            <ul className="flex flex-col gap-3 text-xs font-semibold tracking-wider text-[#333] uppercase">
+          {/* Col 2: Navigation Links */}
+          <div className="md:col-span-3">
+            <p className="text-[0.7rem] font-bold tracking-widest text-[#5a7837] uppercase mb-3">
+              EXPLORE
+            </p>
+            <ul className="flex flex-col gap-2 text-xs font-semibold tracking-wider text-[#444] uppercase">
               {footerNavLinks.map((item) => (
                 <li key={item.href}>
                   <Link
                     href={item.href}
-                    className="transition-colors hover:text-[#5a7837]"
+                    className="inline-block py-0.5 transition-colors hover:text-[#5a7837]"
                   >
                     {item.label}
                   </Link>
@@ -62,53 +58,66 @@ export function SiteFooter() {
             </ul>
           </div>
 
-          {/* Right Column: Connect, Socials & Actions */}
-          <div className="lg:col-span-3 xl:col-span-3 flex flex-col gap-6">
-            <div>
-              <h3 className="text-xs font-semibold tracking-widest text-[#5a7837] uppercase mb-4">
-                CONNECT
-              </h3>
-            </div>
+          {/* Col 3: Connect & Ground Actions */}
+          <div className="md:col-span-4 flex flex-col gap-3">
+            <p className="text-[0.7rem] font-bold tracking-widest text-[#5a7837] uppercase mb-1">
+              CONNECT
+            </p>
 
-            {/* Quick Action Buttons (WhatsApp / Instagram / Maps) */}
-            <div className="flex flex-wrap gap-2.5">
-              {whatsapp && (
-                <ButtonLink href={whatsapp} icon={<MessageIcon />} className="text-xs py-2 px-3.5">
-                  WhatsApp
-                </ButtonLink>
-              )}
-              <ButtonLink
+            <div className="flex flex-wrap gap-2">
+              {/* Instagram */}
+              <a
                 href={club.instagram}
-                variant="secondary"
-                icon={<InstagramIcon />}
-                className="text-xs py-2 px-3.5"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-3.5 py-1.5 text-xs font-semibold text-[#1c1c1c] shadow-sm transition-all duration-200 hover:border-[#5a7837] hover:bg-stone-50 hover:text-[#5a7837]"
               >
-                Instagram
-              </ButtonLink>
+                <InstagramIcon className="size-3.5" />
+                <span>Instagram</span>
+              </a>
+
+              {/* WhatsApp */}
+              {whatsapp && (
+                <a
+                  href={whatsapp}
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-3.5 py-1.5 text-xs font-semibold text-[#1c1c1c] shadow-sm transition-all duration-200 hover:border-[#5a7837] hover:bg-stone-50 hover:text-[#5a7837]"
+                >
+                  <MessageIcon className="size-3.5" />
+                  <span>WhatsApp</span>
+                </a>
+              )}
+
+              {/* Google Maps Location */}
+              <a
+                href={mapsLink}
+                target="_blank"
+                rel="noopener noreferrer"
+                className="inline-flex items-center gap-2 rounded-full border border-stone-300 bg-white px-3.5 py-1.5 text-xs font-semibold text-[#1c1c1c] shadow-sm transition-all duration-200 hover:border-[#5a7837] hover:bg-stone-50 hover:text-[#5a7837]"
+              >
+                <MapPinIcon className="size-3.5 text-[#5a7837]" />
+                <span>Ground Location</span>
+              </a>
             </div>
 
-            {/* Location & Map Link */}
-            <a
-              href={mapsLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="inline-flex items-start gap-2 text-xs text-[#555] transition-colors hover:text-[#5a7837]"
-            >
-              <MapPinIcon className="mt-0.5 size-3.5 shrink-0 text-[#5a7837]" />
-              <address className="not-italic leading-relaxed">{addressLine}</address>
-            </a>
+            <p className="text-[0.72rem] text-[#777] pt-1">
+              Ground: Marikkals FC Ground & Pallippadi Turf
+            </p>
           </div>
         </div>
 
-        {/* Bottom Bar: Location Credits, Copyright & Developer attribution */}
-        <div className="mt-8 flex flex-col gap-3 border-t border-ink-900/10 pt-6 text-[0.7rem] sm:text-xs text-[#777] uppercase tracking-wider sm:flex-row sm:items-center sm:justify-between">
+        {/* Bottom Bar: Copyright, Location & Back To Top */}
+        <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-4 pt-6 text-[0.7rem] sm:text-xs text-[#777] uppercase tracking-wider">
           <p>
-            MANKADA PALLIPURAM, MALAPPURAM, KERALA
+            MANKADA PALLIPURAM · MALAPPURAM, KERALA
           </p>
-          <div className="flex items-center gap-4">
+
+          <div className="flex items-center gap-6">
             <p>
               © SPORTING FC PALLIPPADI {buildDate.slice(0, 4)}
             </p>
+            <BackToTop />
           </div>
         </div>
       </div>
